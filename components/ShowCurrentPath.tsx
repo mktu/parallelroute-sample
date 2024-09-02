@@ -1,12 +1,12 @@
 'use client'
 
-import Links from "./Links";
+import Routes from "./Routes";
 
 
 const ShowCurrentPath = () => {
     return (
         <div className='w-full bg-yellow-100 p-2'>
-            <Links />
+            <Routes />
         </div>
     );
 }

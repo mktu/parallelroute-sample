@@ -16,10 +16,10 @@ const PathName: FC<{ path: string }> = ({ path }) => {
     )
 }
 
-const Links: FC = () => {
+const Routes: FC = () => {
     return (
         <section className='flex flex-col items-start border rounded border-input p-4'>
-            <h3 className='font-semibold text-lg'>Links</h3>
+            <h3 className='font-semibold text-lg'>Routes</h3>
             <PathName path='/' />
             <PathName path='/groups' />
             <PathName path='/users' />
@@ -27,4 +27,4 @@ const Links: FC = () => {
     )
 }
 
-export default Links
+export default Routes
