@@ -5,6 +5,7 @@ import { PageInfoProvider } from "@/context/PageInfoContext";
 import FilePathList from "@/components/FilePathList";
 import Routes from "@/components/Routes";
 import Description from "@/components/Description";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,6 +14,11 @@ type Props = {
   left: React.ReactNode;
   right: React.ReactNode;
 }
+
+export const metadata: Metadata = {
+  title: "Parallel route checker",
+  description: "Next.jsのParallel Routeのサンプルページです",
+};
 
 const Layout: FC<Props> = ({ children, left, right }) => {
   return (
